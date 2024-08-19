@@ -1,9 +1,87 @@
 
-body{
-    background: center;
-    
+body, html{
+    height: 100%; /*Chiều cao*/
+    margin: 0%;/*Lề */
+    font-family: Arial, Helvetica, sans-serif;/*font chữ*/
+    display: flex;/*Tạo bố cục linh hoạt*/
+    justify-content: center; /*Căn giữa theo chiều ngang*/
+    align-items: center;/*Căn giữa theo chiều dọc*/
 }
+html{
+    background-color: rgb(92, 172, 92);
+} 
+/* Định dạng wrapper để căn giữa nội dung */
+.wrapper{
+    width: 100%; /*Chiều rộng*/
+    max-width: 400px;
+    padding: 20px; /*Khoảng cách bên trong của 1 phần tử*/
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px ;/*thêm bóng*/
+    border-radius: 20px;/* tạo ra các góc tròn cho phần tử, giúp làm mềm các góc của phần tử.*/
+}
+/*Căn chỉnh tiêu đề*/
 h1{
-    /* text-align: center; */
-    color: red;
+
+    text-align: center;
+    margin-bottom: 30px;/*Căn chỉnh lề dưới*/
+    color:aliceblue;
+}
+/*Định dạng các ô input*/
+.input-box{
+    margin-bottom: 15px;
+}
+.input-box input{
+    width: 300px; 
+    padding: 10px; /*Khoảng cách bên trong của 1 phần tử*/
+    border: 1px solid #ccc;/*Độ dày đường viền và tô màu */
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* Định dạng phần nhớ mật khẩu và quên mật khẩu */
+.remember-forgot{
+    display:flex;
+    justify-content: center; /*Căn chỉnh forgot password theo trục chính*/
+    align-items: center;
+    margin-bottom: 20px;   
+}
+.remember-forgot a {
+    color: #007bff;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* Định dạng nút Login */
+.btn{
+    width: 320px;
+    padding: 8px;
+    background-color: #007bff;
+    border: none;/*Bỏ viền*/
+    border-radius: 10px;/*Bo góc*/
+    color: white;
+    font-size: 16px;
+    cursor: pointer; /*Thay đổi con trỏ chuột khi chạm vào Login*/
+}
+.btn:hover{
+    background-color: #0056b3;/*Làm đổi màu khi dí chuột vào Login*/
+
+}
+/* Định dạng liên kết đăng ký Don't have an account -> Register */
+.register-link{
+    text-align: center;
+    margin-top: 20px;
+}
+/*Chỉnh Register*/
+.register-link a { 
+    color: #007bff;
+    text-decoration: none;/*Bỏ dấu gạch dưới text*/
+}
+.register-link a:hover {
+    text-decoration: underline;/*Rê chuột vào Register thì hiện gạch*/
+
 }
