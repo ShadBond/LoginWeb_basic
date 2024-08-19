@@ -15,7 +15,7 @@ html{
     width: 100%; /*Chiều rộng*/
     max-width: 400px;
     padding: 20px; /*Khoảng cách bên trong của 1 phần tử*/
-    background-color: #f4f4f4;
+    background-color: #799141;
     box-shadow: 0 0 10px ;/*thêm bóng*/
     border-radius: 20px;/* tạo ra các góc tròn cho phần tử, giúp làm mềm các góc của phần tử.*/
 }
